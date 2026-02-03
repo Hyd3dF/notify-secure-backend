@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block auth_content %}
+<div class="auth-container">
+    <div class="card auth-box shadow-lg border-primary">
+        <div class="text-center mb-4">
+            <h3 class="fw-bold text-primary">System Setup</h3>
+            <p class="text-muted">Create the Master Administrator account.</p>
+            <div class="alert alert-warning py-2 small">
+                <i class="bi bi-shield-lock"></i> registration is only available once.
+            </div>
+        </div>
+        <form method="POST">
+            <div class="mb-3">
+                <label class="form-label text-muted small">Choose Username</label>
+                <input type="text" name="username" class="form-control" required>
+            </div>
+            <div class="mb-4">
+                <label class="form-label text-muted small">Secure Password</label>
+                <input type="password" name="password" class="form-control" required minlength="8">
+                <div class="form-text text-white-50">Make sure this is strong. It won't be recoverable easily.</div>
+            </div>
+            <div class="d-grid">
+                <button type="submit" class="btn btn-primary">Create Admin Account</button>
+            </div>
+        </form>
+    </div>
+</div>
+{% endblock %}
