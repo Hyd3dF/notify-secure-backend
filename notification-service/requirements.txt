@@ -1,0 +1,10 @@
+flask
+flask-sqlalchemy
+flask-login
+argon2-cffi
+firebase-admin
+cryptography
+psycopg2-binary
+gunicorn
+python-dotenv
+pocketbase
